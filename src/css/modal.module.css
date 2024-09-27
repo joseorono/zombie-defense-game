@@ -1,0 +1,7 @@
+.modalContent {
+  background-image: url('/assets/bg/modal_bg_pixel.webp');
+  background-repeat: repeat;
+  background-position: left;
+  background-size: cover;
+  color: #222;
+}

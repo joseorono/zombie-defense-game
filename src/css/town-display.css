@@ -1,0 +1,46 @@
+:root {
+  --townDSlot: 32px;
+  --townDSprite: 28px;
+}
+
+.townDisplay__wrapper,
+.townDisplay,
+.townDisplay img,
+#big-clicky-button {
+  user-drag: none;
+}
+
+.townDisplay img {
+  pointer-events: none;
+}
+
+.townDisplay__wrapper,
+.townDisplay {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.townDisplay {
+  transform-origin: top left;
+}
+
+.townTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Dimensions */
+  width: var(--townDSlot);
+  min-width: var(--townDSlot);
+  height: var(--townDSlot);
+
+  /* Temporal, remove when you have a proper sprite */
+  font-size: var(--townDSprite);
+}
+
+.townDisplay__wrapper {
+  background: url('/assets/town-view-tiles/background/parchmentAncient.png');
+}

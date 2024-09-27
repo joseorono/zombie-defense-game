@@ -1,68 +1,355 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'css/pixelated-utils.css';
+@import 'css/town-display.css';
+@import 'css/visual-effects.css';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Minimal3x5';
+  src: url('/fonts/Minimal3x5.ttf') format('truetype');
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: 'Minimal5x5Monospaced';
+  src: url('/fonts/Minimal5x5Monospaced.ttf') format('truetype');
 }
-a:hover {
-  color: #535bf2;
+
+@font-face {
+  font-family: 'Minimal5x7';
+  src: url('/fonts/Minimal5x7.ttf') format('truetype');
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 72.2% 50.6%;
+    --radius: 0.75rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 72.2% 50.6%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    line-height: 1;
+  }
+}
+
+html {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px; /* Set them apart a bit for legibility */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  color: #f5f6fa;
+  background-color: #3e4f59;
+}
+.clickerArea {
+  @apply flex flex-auto items-center justify-center bg-gray-300;
+  background: no-repeat center/cover url('/assets/splashscreen.webp');
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/*
+==========================================
+    Background Styles
+==========================================
+*/
+
+.bg-img-noise-scroll {
+  background-image: url('/assets/bg/bgnoise-10-60-scroll.png');
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.bg-img-noise-gray {
+  background-image: url('/assets/bg/bgnoise-10-40-gray.webp');
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.bg-scroll {
+  @apply bg-img-noise-scroll;
+  background-color: #f9f4e7;
+}
+
+.bg-blue-noise {
+  background-image: url('/assets/bg/bgnoise-10-60-scroll.png');
+  background-color: theme('colors.blue.800');
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+:root {
+  --height-navbar: 80px;
+}
+
+.h-navbar {
+  height: var(--height-navbar);
+}
+
+.h-game {
+  height: calc(100vh - var(--height-navbar));
+  height: calc(100svh - var(--height-navbar));
+  max-height: calc(100vh - var(--height-navbar));
+  max-height: calc(100svh - var(--height-navbar));
+}
+
+#loaderLogo,
+.logoNav {
+  z-index: 10;
+  width: 100%;
+  height: auto;
+}
+
+#loaderLogo {
+  display: block;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.logoNav {
+  max-width: 76px;
+  max-height: 100%;
+  /*width: max-content;*/
+}
+
+@media only screen and (min-width: 992px) {
+  .logoNav {
+    max-width: 128px;
   }
-  a:hover {
-    color: #747bff;
+}
+
+.navbar {
+  @apply h-navbar;
+  background-color: theme('colors.blue.800');
+  background-repeat: repeat;
+  border-bottom: 1px solid theme('colors.blue.900');
+
+  /* For the navbar to be always on top */
+  z-index: 1000;
+
+  /* /assets/bg/navbarbg.png repeating horizontally, pressed to the bottom, and dirt_tile.png in the whole background*/
+
+  /* Multiple background images */
+  background-image: url('/assets/bg/navbarbg.png'), url('/assets/bg/dirt_tile.png');
+  /* Position the first background image at the bottom, and let it repeat horizontally */
+  background-position:
+    bottom left,
+    top left;
+  /* Repeat the first background image horizontally, and the second image both horizontally and vertically */
+  background-repeat: repeat-x, repeat;
+  /* Set the background size to auto, meaning it will use the natural size of the images */
+  background-size: auto, auto;
+}
+
+/*
+==========================================
+    Layout Elements Styles
+==========================================
+*/
+
+.border-scroll-groove {
+  border: 3px groove #e8e0c3;
+}
+
+.SectionHeader {
+  @apply bg-img-noise-scroll border-scroll-groove bg-red-800 p-1 text-center text-2xl font-bold text-white;
+  user-select: none;
+}
+
+/*
+    * The following styles are for the fake progress bar
+    * that represents the passive Buildings.
+*/
+
+@keyframes progress-bar-width-growth {
+  from {
+    width: 0;
   }
-  button {
-    background-color: #f9f9f9;
+  to {
+    width: 100%;
   }
+}
+
+.loopFakeProgressBar {
+  animation: progress-bar-width-growth 1s linear infinite;
+}
+
+/*
+==========================================
+    * DaisyUI Customizations
+==========================================
+*/
+
+.btn {
+  @apply pixel-rounded mx-1 my-1 h-10 min-h-10 text-base font-bold;
+}
+
+/*
+====================
+  Custom Scrollbar
+====================
+*/
+
+/* Webkit Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  background: #efefef; /* Lighter color for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a3e2b; /* Dark color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 3px solid #e8e0c3; /* Adds space around the thumb with the track's color */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #5a3e2b #fff; /* Thumb and track colors */
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #282c34 !important;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #282c34 !important;
+  width: 5px;
+}
+
+/*
+==========================================
+    * Store Styles
+==========================================
+*/
+
+.store__entry {
+  @apply pixel-rounded m-2 rounded-lg border border-border bg-card p-2 text-card-foreground;
+}
+
+.store__unitName {
+  @apply mb-1 text-2xl font-bold;
+}
+
+.store__unitDescription {
+  @apply mb-2 text-sm text-slate-600;
+}
+
+.store__currentCount {
+  @apply text-slate-600;
+}
+
+.store__currentCount b {
+  @apply text-slate-700;
+}
+
+.store__unitCost {
+  @apply pixel-rounded mt-1 flex flex-col bg-brown-800 px-4 py-1 text-base text-white;
+}
+
+.store__buyButton {
+  @apply pixel-rounded flex h-[100px] basis-1/4 cursor-pointer items-center justify-center rounded-lg bg-primary px-2 py-2 text-2xl font-bold text-primary-foreground hover:bg-brown-950 hover:text-scroll-500;
+  border: 8px ridge theme('colors.scroll.900');
+}
+
+.store__buyButton:disabled,
+.store__buyButton:disabled:hover,
+.store__buyButton[disabled] {
+  @apply cursor-not-allowed bg-gray-500 text-gray-300;
+}
+
+/*
+==========================================
+    * SplashScreen
+==========================================
+*/
+
+.splashScreen {
+  position: relative;
+}
+
+.splashScreen__bg {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* The image used */
+  background-image: url('/assets/splashscreen.webp');
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

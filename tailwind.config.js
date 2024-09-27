@@ -210,21 +210,7 @@ module.exports = {
   ],
 
   daisyui: {
-    themes: [
-      {
-        aurelian: {
-          primary: '#8E001C',
-          secondary: '#FFD700',
-          accent: '#d9292f',
-          neutral: '#dcfce7',
-          'base-100': '#282C34',
-          info: '#2998D9',
-          success: '#4BB543',
-          warning: '#FFB300',
-          error: '#d32f2f',
-        },
-      },
-    ],
-    logs: true,
+    themes: [],
+    logs: false,
   },
 };

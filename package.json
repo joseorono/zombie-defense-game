@@ -8,11 +8,12 @@
     "type": "git",
     "url": "git+https://github.com/joseorono/zombie-defense-game.git"
   },
-  "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+  "author": "Exologic Team <joseomaker@gmail.com> (https://exologic.agency/)",
   "license": "GPL-3.0-only",
   "licenseUrl": "https://www.gnu.org/licenses/gpl-3.0.html",
   "bugs": {
     "url": "https://github.com/joseorono/zombie-defense-game/issues"
+  },
   "homepage": "https://github.com/joseorono/zombie-defense-game#readme",
   "keywords": [
     "react",
@@ -98,4 +99,3 @@
     "vitest": "^2.1.1"
   }
 }
-

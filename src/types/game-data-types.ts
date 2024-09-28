@@ -59,6 +59,13 @@ export type EventOutcome = {
   remainingdaysDelta: number; // For making the game last longer or less
 } & playerResources;
 
+export type eventData = {
+  title: string;
+  description: string;
+  answers: string[];
+  outcomes: EventOutcome[];
+};
+
 /*
 ======================================
         Tower Defense Minigame

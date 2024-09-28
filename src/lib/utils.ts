@@ -1,6 +1,8 @@
+import { FIRST_NAMES_FEM, TOWN_NAME_PARTS } from './../constants/characters';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { RANDOM_NAMES } from '~/constants/characters';
+import { FIRST_NAMES_MASC, FIRST_NAMES_FEM, LAST_NAMES } from '~/constants/characters';
+import { genders } from '~/types/game-data-types';
 
 export const noop = () => {};
 
@@ -34,35 +36,21 @@ export function getRandomElement<T>(array: T[]): T {
   return array[index];
 }
 
-export function getRandomRomanName(type: 'full' | 'first' | null = null): string {
-  switch (type) {
-    case 'full':
-      const givenName = getRandomElement(RANDOM_NAMES.givenNames);
-      const familyName = getRandomElement(RANDOM_NAMES.familyNames);
-      const cognomen = getRandomElement(RANDOM_NAMES.cognomina);
-      return `${givenName} ${familyName} ${cognomen}`;
-    case 'first':
-      return getRandomElement(RANDOM_NAMES.givenNames);
-    default: // Just a formality
-      return getRandomElement(RANDOM_NAMES.givenNames);
+export function getRandomName(gender: genders, type: 'full' | 'first' = 'full'): string {
+  let res = gender == 'male' ? getRandomElement(FIRST_NAMES_MASC) : getRandomElement(FIRST_NAMES_FEM);
+
+  if (type === 'full') {
+    res += ' ' + getRandomElement(LAST_NAMES);
   }
+
+  return res;
 }
 
-export function getRandomRomanTownName(): string {
-  const prefix = getRandomElement(['Colonia ', 'Nova ', 'Polis ', '', '']);
-  const root = getRandomElement([
-    'Roma',
-    'Tiber',
-    'Flavius',
-    'Luna',
-    'Caesarea',
-    'Nerva',
-    'Traiana',
-    'Valeria',
-    'Agrippina',
-    'Maxima',
-  ]);
-  return `${prefix}${root}`;
+export function getRandomTownName(): string {
+  const prefix = getRandomElement(TOWN_NAME_PARTS.prefixes);
+  const suffix = getRandomElement(TOWN_NAME_PARTS.suffixes);
+
+  return `${prefix}${suffix}`;
 }
 
 export function findLastInArray<T>(

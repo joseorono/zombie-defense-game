@@ -1,5 +1,64 @@
+/*
+==============================
+        Town
+==============================
+*/
+
+export const TOWN_NAME_PARTS = {
+  prefixes: [
+    'Green',
+    'Spring',
+    'River',
+    'Lake',
+    'Pine',
+    'Cedar',
+    'Maple',
+    'Willow',
+    'Silver',
+    'Clear',
+    'Rock',
+    'Ash',
+    'Oak',
+    'Sunny',
+    'Wind',
+    'Red',
+    'Blue',
+    'Golden',
+    'New',
+    'Fort',
+  ],
+
+  suffixes: [
+    'ville',
+    'ton',
+    'ford',
+    'brook',
+    'port',
+    'field',
+    'hill',
+    'crest',
+    'burg',
+    'view',
+    'heights',
+    'dale',
+    'ridge',
+    'valley',
+    'grove',
+    'springs',
+    'falls',
+    'wood',
+    'harbor',
+    'haven',
+  ],
+};
+
+/*
+==============================
+        Characters
+==============================
+*/
 // The Game is set in America, so we'll use American names
-export const FIRST_NAMES_MASC: readonly string[] = [
+export const FIRST_NAMES_MASC: string[] = [
   'James',
   'John',
   'Robert',
@@ -147,7 +206,7 @@ export const FIRST_NAMES_FEM: string[] = [
   'Wendy',
 ];
 
-export const LAST_NAMES: readonly string[] = [
+export const LAST_NAMES: string[] = [
   'Smith',
   'Johnson',
   'Williams',

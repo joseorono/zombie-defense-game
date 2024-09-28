@@ -12,15 +12,15 @@ import {
 } from '~/types/game-data-types';
 import { IModal } from '~/types/dialog-props';
 import { NOTHING_EVENT } from '~/constants/events';
-import { getRandomRomanName, getRandomRomanTownName } from '~/lib/utils';
+import { getRandomName, getRandomTownName } from '~/lib/utils';
 
 // Audio atoms
 export const isMutedAtom = atomWithStorage<boolean>('isMuted', false);
 export const volumeAtom = atomWithStorage<number>('volume', 1);
 
 //player atoms
-export const playerNameAtom = atomWithStorage<string>('playerName', getRandomRomanName());
-export const townNameAtom = atomWithStorage<string>('townName', getRandomRomanTownName());
+export const playerNameAtom = atomWithStorage<string>('playerName', getRandomName());
+export const townNameAtom = atomWithStorage<string>('townName', getRandomTownName());
 export const civilizationLevelAtom = atomWithStorage<number>('civLevel', 0);
 export const showTutorialsAtom = atomWithStorage<boolean>('showTutorials', true);
 export const playerWeaponAtom = atomWithStorage<IPlayerWeaponStats>('playerWeapon', {

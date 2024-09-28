@@ -62,6 +62,7 @@ export type EventOutcome = {
 
 export type eventData = {
   title: string;
+  probability: number;
   description: string;
   answers: string[];
   outcomes: EventOutcome[];

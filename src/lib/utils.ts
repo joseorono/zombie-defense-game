@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { ROMAN_NAMES } from '~/constants/characters';
+import { RANDOM_NAMES } from '~/constants/characters';
 
 export const noop = () => {};
 
@@ -37,14 +37,14 @@ export function getRandomElement<T>(array: T[]): T {
 export function getRandomRomanName(type: 'full' | 'first' | null = null): string {
   switch (type) {
     case 'full':
-      const givenName = getRandomElement(ROMAN_NAMES.givenNames);
-      const familyName = getRandomElement(ROMAN_NAMES.familyNames);
-      const cognomen = getRandomElement(ROMAN_NAMES.cognomina);
+      const givenName = getRandomElement(RANDOM_NAMES.givenNames);
+      const familyName = getRandomElement(RANDOM_NAMES.familyNames);
+      const cognomen = getRandomElement(RANDOM_NAMES.cognomina);
       return `${givenName} ${familyName} ${cognomen}`;
     case 'first':
-      return getRandomElement(ROMAN_NAMES.givenNames);
+      return getRandomElement(RANDOM_NAMES.givenNames);
     default: // Just a formality
-      return getRandomElement(ROMAN_NAMES.givenNames);
+      return getRandomElement(RANDOM_NAMES.givenNames);
   }
 }
 

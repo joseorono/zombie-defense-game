@@ -11,7 +11,7 @@ export const assetList: string[] = [
   '/assets/resources/stone.png',
   '/assets/resources/wheat.png',
   '/assets/biggest-coin.png',
-  '/assets/logo_aurelian.png',
+  '/assets/logo_game.png',
   '/assets/splashscreen.webp',
   '/assets/town-view-tiles/background/parchmentAncient.png',
   '/assets/town-view-tiles/buildings/bakery.png',

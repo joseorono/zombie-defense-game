@@ -2,7 +2,14 @@ import { atomWithStorage } from 'jotai/utils';
 import { withImmer } from 'jotai-immer';
 import { atom } from 'jotai';
 
-import { eventData, IPlayerWeaponStats, playerResources, ScoreEntry, unitCount } from '~/types/game-data-types';
+import {
+  eventData,
+  IPlayerWeaponStats,
+  placeKeys,
+  playerResources,
+  ScoreEntry,
+  unitCount,
+} from '~/types/game-data-types';
 import { IModal } from '~/types/dialog-props';
 import { NOTHING_EVENT } from '~/constants/events';
 import { getRandomRomanName, getRandomRomanTownName } from '~/lib/utils';
@@ -49,9 +56,21 @@ export const resourcesAtom = withImmer(
     water: 0,
     wood: 0,
     scrap: 0,
+    civilianCount: 0,
   }),
 );
 
 export const scoreboardAtom = atomWithStorage<ScoreEntry[]>('score', []);
 
 export const currentEventAtom = withImmer(atomWithStorage<eventData>('event', NOTHING_EVENT));
+
+/*
+======================================
+        Town Building
+======================================
+*/
+
+export const TOWN_GRID_ROWS = 3;
+export const TOWN_GRID_COLS = 3;
+
+export const townDisplayRowsAtom = atomWithStorage<placeKeys[][]>('townDisplayRows', []);

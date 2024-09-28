@@ -9,6 +9,7 @@ export type playerResources = {
   water: number;
   wood: number;
   scrap: number;
+  civilianCount: number;
 };
 
 export type priceData = {
@@ -143,6 +144,7 @@ export type placeData = {
   name: string;
   description: string;
   dailyIncome: playerResources;
+  incomeVariance: Nullable<number>;
 };
 
 export type placeKeys = 'water' | 'military-base' | 'land' | 'gunshop' | 'grocery' | 'house';

@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { ROMAN_NAMES } from '~/constants/names';
+import { ROMAN_NAMES } from '~/constants/characters';
 
 export const noop = () => {};
 

@@ -13,6 +13,7 @@ import {
 import { IModal } from '~/types/dialog-props';
 import { NOTHING_EVENT } from '~/constants/events';
 import { getRandomName, getRandomTownName } from '~/lib/utils';
+import { PlaceState } from '~/types/city-places';
 
 // Audio atoms
 export const isMutedAtom = atomWithStorage<boolean>('isMuted', false);
@@ -70,7 +71,7 @@ export const currentEventAtom = withImmer(atomWithStorage<eventData>('event', NO
 ======================================
 */
 
-export const TOWN_GRID_ROWS = 3;
-export const TOWN_GRID_COLS = 3;
+export const placesLocationAtom = atomWithStorage<placeKeys[][]>('townLocations', []);
+export const placesStateAtom = atomWithStorage<PlaceState[][]>('townState', []);
 
-export const townDisplayRowsAtom = atomWithStorage<placeKeys[][]>('townDisplayRows', []);
+// ToDo: Create eraserAtom to restart the game

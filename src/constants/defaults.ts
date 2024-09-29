@@ -10,7 +10,7 @@ Valores por default para las opciones como el volumen y si reproducir o no la mu
 
 import { randIntInRange } from '~/lib/math';
 import { placeKeys } from '~/types/city-places';
-import { IGameStateSnapshot, playerResources } from '~/types/game-data-types';
+import { IGameStateSnapshot } from '~/types/game-data-types';
 
 export const ENABLE_ARTIFICIAL_DELAYS = false;
 
@@ -49,7 +49,6 @@ const INITIAL_VALUES: IGameStateSnapshot = {
 */
 
 /*
-
 Visualization of the town grid. Each letter represents a different place type:
 
 WWWWW
@@ -57,6 +56,7 @@ FBBBF
 FBBBF
 WWWWW
 */
+
 export const DEFAULT_TOWNDISPLAY_ROWS = 4;
 export const DEFAULT_TOWNDISPLAY_COLUMNS = 5;
 

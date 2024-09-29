@@ -1,5 +1,10 @@
 import { eventData } from '~/types/game-data-types';
 import { getRandomElement } from './utils';
+import { EVENT_PROBABILITY } from '~/constants/defaults';
+
+export function shouldTriggerEvent(): boolean {
+  return Math.random() < EVENT_PROBABILITY;
+}
 
 export function getRandomEvent(events: Array<eventData>, isWeighted: boolean = false): eventData {
   // We can receive events as an array with little performance cost because they're passed by reference

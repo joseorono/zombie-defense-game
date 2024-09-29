@@ -13,10 +13,10 @@ export type playerResources = {
 };
 
 export type priceData = {
-  costFood: number;
-  costWater: number;
-  costWood: number;
-  costScrap: number;
+  food: number;
+  water: number;
+  wood: number;
+  scrap: number;
 };
 
 export interface IPlayerWeaponStats {

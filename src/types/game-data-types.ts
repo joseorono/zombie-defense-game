@@ -136,26 +136,6 @@ export interface IDefenseGameResults {
 
 /* 
 ======================================
-            Places 
-======================================
-*/
-
-export type placeData = {
-  id: number;
-  name: string;
-  description: string;
-  dailyIncome: playerResources;
-  incomeVariance: Nullable<number>;
-};
-
-export type placeKeys = 'water' | 'military-base' | 'land' | 'gunshop' | 'grocery' | 'house';
-
-export type buildingMap = {
-  [key in placeKeys]: placeData;
-};
-
-/* 
-======================================
             Civilians 
 ======================================
 */

@@ -28,6 +28,23 @@ export interface IPlayerWeaponStats {
 
 /*
 ======================================
+        Game State
+======================================
+*/
+
+export interface IProgressToggles {}
+
+export interface IGameStateSnapshot {
+  musicVolume: number;
+  soundVolume: number;
+  playMusic: boolean;
+  playSound: boolean;
+  progressToggles: IProgressToggles;
+  resources: playerResources;
+}
+
+/*
+======================================
         Scoreboard
 ======================================
 */

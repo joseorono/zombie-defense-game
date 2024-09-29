@@ -1,6 +1,7 @@
 @import 'css/pixelated-utils.css';
 @import 'css/town-display.css';
 @import 'css/visual-effects.css';
+@import 'css/odometer-js-theme.css';
 
 @tailwind base;
 @tailwind components;
@@ -97,10 +98,6 @@ html {
   letter-spacing: 1px; /* Set them apart a bit for legibility */
 }
 
-body {
-  color: #f5f6fa;
-  background-color: #3e4f59;
-}
 .clickerArea {
   @apply flex flex-auto items-center justify-center bg-gray-300;
   background: no-repeat center/cover url('/assets/splashscreen.webp');
@@ -239,7 +236,9 @@ body {
 */
 
 .btn {
-  @apply pixel-rounded mx-1 my-1 h-10 min-h-10 text-base font-bold;
+  /* 
+ @apply pixel-rounded mx-1 my-1 h-10 min-h-10 text-base font-bold;
+ */
 }
 
 /*

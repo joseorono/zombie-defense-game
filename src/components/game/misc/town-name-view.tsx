@@ -22,7 +22,7 @@ export default function PopulationView() {
         <h1 className="text-3xl">{townName}</h1>
       </button>
       {/* should show in </PopulationView> */}
-      {/* <p>Population: {Object.values(workers).reduce((a, b) => a + b, 0) + BASE_CITIZEN_COUNT}</p> */}
+      {/* <p>Population: {Object.values(workers).reduce((a, b) => a + b, 0) + INITIAL_CIVILIAN_COUNT}</p> */}
     </div>
   );
 }

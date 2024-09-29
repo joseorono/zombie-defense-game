@@ -1,6 +1,6 @@
 import { useSetAtom } from 'jotai';
 import SoundBar from '~/components/soundBar';
-import GithubPixelIcon from '~/icons/GithubPixelIcon';
+import { FaGithub } from 'react-icons/fa';
 import { setContentAtom } from '~/store/atoms';
 import CreditsDialog from '~/components/modals/credits-dialog';
 import TutorialDialog from '~/components/modals/tutorial-dialog';
@@ -47,7 +47,7 @@ export default function GameNavbar() {
             </li>
             <li>
               <a href="https://github.com/joseorono/idle-roman-game/">
-                <GithubPixelIcon />
+                <FaGithub />
               </a>
             </li>
             <li>

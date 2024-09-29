@@ -31,17 +31,16 @@ function App() {
 
   return (
     <>
+      <DebugArea />
       <TailwindDemo />
       <MouseTracker />
       <ResponsiveNotice />
 
       <Modal />
 
-      {/* <DebugArea /> */}
-
       {/* 
     
-      <GameScreen />
+    <GameScreen />
 
       <GameLoader />
       

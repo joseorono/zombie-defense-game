@@ -34,19 +34,14 @@ function App() {
       <TailwindDemo />
       <MouseTracker />
       <ResponsiveNotice />
-      {/*
-      <Delay seconds={1}>
-        <Repeat seconds={GAME_TICK_SECONDS}>
-          <BackgroundWorker />
-        </Repeat>
-      </Delay>
-    */}
+
       <Modal />
 
       {/* <DebugArea /> */}
 
       {/* 
     
+      <GameScreen />
 
       <GameLoader />
       

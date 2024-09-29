@@ -1,7 +1,6 @@
-import { FIRST_NAMES_FEM, TOWN_NAME_PARTS } from './../constants/characters';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { FIRST_NAMES_MASC, FIRST_NAMES_FEM, LAST_NAMES } from '~/constants/characters';
+import { FIRST_NAMES_MASC, FIRST_NAMES_FEM, TOWN_NAME_PARTS, LAST_NAMES } from '~/constants/characters';
 import { genders } from '~/types/game-data-types';
 
 export const noop = () => {};

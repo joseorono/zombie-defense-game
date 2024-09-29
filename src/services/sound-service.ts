@@ -35,7 +35,7 @@ const soundFiles = {
   [SoundNames.buyLegionary]: 'assets/audio/buyLegionary.mp3',
   [SoundNames.buyPriest]: 'assets/audio/buyPriest.mp3',
   [SoundNames.buyForum]: 'assets/audio/buyForum.mp3',
-  [SoundNames.closeModal]: 'assets/audio/closeModal.mp3',
+  [SoundNames.closeModal]: 'assets/audio/fx/close-modal.mp3',
   [SoundNames.click]: 'assets/audio/click.mp3',
   [SoundNames.coinClick]: 'assets/audio/fx/coin.mp3',
   [SoundNames.upgrade]: 'assets/audio/upgrade.mp3',

@@ -5,9 +5,9 @@ import '~/index.css';
 import TailwindDemo from './components/demo/tailwind-demo';
 
 import MouseTracker from '~/components/effects/mouse-tracker';
-//import DebugArea from '~/components/debug-area';
 
 import ResponsiveNotice from '~/components/responsive-notice';
+import { ShadcnUiPlayground } from './components/demo/shadcnui-playground';
 //import Modal from '~/components/Modal';
 
 //import { ShadcnUiPlayground } from './components/demo/shadcnui-playground';
@@ -30,13 +30,13 @@ function App() {
   return (
     <>
       <div>Test From App123</div>
+      <ShadcnUiPlayground />
       <TailwindDemo />
       <MouseTracker />
       <ResponsiveNotice />
       {/* 
       <DebugArea />
       <Modal />
-      <ShadcnUiPlayground />
 
 
     

@@ -14,11 +14,13 @@ export default function DebugArea() {
 
   return (
     <>
-      <div className="p-8"></div>
+      <div className="p-8">
+        <h1 className="text-4xl">Debug Area</h1>
+      </div>
 
       {/* <SoundsDemo></SoundsDemo> */}
 
-      <div id="app">
+      <div id="test-area">
         {/*
         <TailwindDemo />
         */}

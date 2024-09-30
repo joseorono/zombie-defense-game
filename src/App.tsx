@@ -1,20 +1,18 @@
+import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 //import { Repeat, Delay } from 'timeline-composer';
 import '~/index.css';
+import TailwindDemo from './components/demo/tailwind-demo';
 
-//import { useEffect } from 'react';
-//import MouseTracker from '~/components/effects/mouse-tracker';
+import MouseTracker from '~/components/effects/mouse-tracker';
 //import DebugArea from '~/components/debug-area';
 
-//import ResponsiveNotice from '~/components/responsive-notice';
+import ResponsiveNotice from '~/components/responsive-notice';
 //import Modal from '~/components/Modal';
 
-//import TailwindDemo from './components/demo/tailwind-demo';
 //import { ShadcnUiPlayground } from './components/demo/shadcnui-playground';
 
 function App() {
-  return <div>Test From App1</div>;
-
   const toastClasses = 'font-bold text-xl mx-2 w-11/12 md:w-fit min-w-[200px]';
 
   useEffect(() => {
@@ -31,13 +29,14 @@ function App() {
 
   return (
     <>
-      {/* 
+      <div>Test From App123</div>
       <TailwindDemo />
-      <DebugArea />
       <MouseTracker />
+      <ResponsiveNotice />
+      {/* 
+      <DebugArea />
       <Modal />
       <ShadcnUiPlayground />
-      <ResponsiveNotice />
 
 
     

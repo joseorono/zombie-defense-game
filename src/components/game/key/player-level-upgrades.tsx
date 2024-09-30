@@ -1,6 +1,6 @@
 import { soundAsset } from '@pixi/sound';
 import { useAtom, useAtomValue } from 'jotai';
-import { LEVELS, LEVELS_COUNT } from '~/constants/upgrades';
+import { CIV_LEVELS, CIV_LEVELS_COUNT } from '~/constants/upgrades';
 import { canAffordNextLevel } from '~/lib/upgrades';
 import { SoundNames, soundService } from '~/services/sound-service';
 import { civilizationLevelAtom, resourcesAtom } from '~/store/atoms';
@@ -30,7 +30,7 @@ export default function PlayerLevelUpgrades() {
     <div className="bg-blue-noise flex items-center justify-center gap-2 px-6 py-4">
       <div className="flex-auto">
         <h1 className="text-3xl text-white">Your Level: {playerLevel}</h1>
-        <p className=""> Current Multiplier: {LEVELS[playerLevel].baseMultiplier.toFixed(1)}</p>
+        <p className=""> Current Multiplier: {CIV_LEVELS[playerLevel].baseMultiplier.toFixed(1)}</p>
       </div>
 
       <button

@@ -1,6 +1,5 @@
-import { soundAsset } from '@pixi/sound';
-import { useAtom, useAtomValue } from 'jotai';
-import { CIV_LEVELS, CIV_LEVELS_COUNT } from '~/constants/upgrades';
+import { useAtom } from 'jotai';
+import { CIV_LEVELS } from '~/constants/upgrades';
 import { canAffordNextLevel } from '~/lib/upgrades';
 import { SoundNames, soundService } from '~/services/sound-service';
 import { civilizationLevelAtom, resourcesAtom } from '~/store/atoms';
@@ -23,7 +22,7 @@ export default function PlayerLevelUpgrades() {
       soundService.playSound(SoundNames.levelUp, soundService.globalVolume * 0.7);
     }
     setPlayerLevel(playerLevel + 1);
-    setResources({ ...resources, gold: resources.gold - 100 });
+    //    setResources({ ...resources, gold: resources.gold - 100 });
   };
 
   return (

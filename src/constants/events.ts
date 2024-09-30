@@ -16,7 +16,7 @@ export const INITIAL_EVENT: eventData = {
       scrap: 0,
     },
   ],
-} as const;
+};
 
 export const NOTHING_EVENT: eventData = {
   title: 'Nothing Happens',

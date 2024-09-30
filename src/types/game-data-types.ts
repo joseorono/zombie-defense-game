@@ -72,10 +72,12 @@ export type ScoreEntry = {
 ======================================
 */
 
-export type EventOutcome = {
-  civiliansDelta: number;
-  remainingdaysDelta: number; // For making the game last longer or less
-} & playerResources;
+export type EventOutcome = Prettify<
+  {
+    civiliansDelta: number;
+    remainingdaysDelta: number; // For making the game last longer or less
+  } & playerResources
+>;
 
 export type eventData = {
   title: string;

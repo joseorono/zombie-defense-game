@@ -237,7 +237,7 @@ html {
 
 .btn {
   /* 
- @apply pixel-rounded mx-1 my-1 h-10 min-h-10 text-base font-bold;
+ @apply mx-1 my-1 h-10 min-h-10 text-base font-bold;
  */
 }
 
@@ -289,7 +289,7 @@ body::-webkit-scrollbar-track {
 */
 
 .store__entry {
-  @apply pixel-rounded m-2 rounded-lg border border-border bg-card p-2 text-card-foreground;
+  @apply m-2 rounded-lg border border-border bg-card p-2 text-card-foreground;
 }
 
 .store__unitName {
@@ -309,11 +309,11 @@ body::-webkit-scrollbar-track {
 }
 
 .store__unitCost {
-  @apply pixel-rounded mt-1 flex flex-col bg-brown-800 px-4 py-1 text-base text-white;
+  @apply mt-1 flex flex-col bg-brown-800 px-4 py-1 text-base text-white;
 }
 
 .store__buyButton {
-  @apply pixel-rounded flex h-[100px] basis-1/4 cursor-pointer items-center justify-center rounded-lg bg-primary px-2 py-2 text-2xl font-bold text-primary-foreground hover:bg-brown-950 hover:text-scroll-500;
+  @apply flex h-[100px] basis-1/4 cursor-pointer items-center justify-center rounded-lg bg-primary px-2 py-2 text-2xl font-bold text-primary-foreground hover:bg-brown-950 hover:text-scroll-500;
   border: 8px ridge theme('colors.scroll.900');
 }
 

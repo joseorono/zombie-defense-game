@@ -9,6 +9,7 @@ import MouseTracker from '~/components/effects/mouse-tracker';
 import ResponsiveNotice from '~/components/responsive-notice';
 import { ShadcnUiPlayground } from './components/demo/shadcnui-playground';
 import Modal from '~/components/Modal';
+import DebugArea from './components/debug-area';
 
 //import { ShadcnUiPlayground } from './components/demo/shadcnui-playground';
 
@@ -31,12 +32,12 @@ function App() {
     <>
       <div>Test From App123</div>
       <ShadcnUiPlayground />
+      <DebugArea />
       <TailwindDemo />
       <MouseTracker />
       <ResponsiveNotice />
       <Modal />
       {/* 
-      <DebugArea />
 
 
     

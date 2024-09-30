@@ -9,7 +9,9 @@ export function canAffordPurchase(cost: priceData, res: playerResources): boolea
     return false;
   }
 
-  return res.food >= cost.food && res.scrap >= cost.scrap && res.water >= cost.water && res.wood >= cost.wood;
+  return (
+    res.food >= cost.foodCost && res.scrap >= cost.scrapCost && res.water >= cost.waterCost && res.wood >= cost.woodCost
+  );
 }
 
 export function playBuildingSound(buildingName: Nullable<string> = null): void {

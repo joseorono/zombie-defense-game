@@ -13,13 +13,41 @@
 }
 
 @font-face {
-  font-family: 'Minimal5x5Monospaced';
-  src: url('/fonts/Minimal5x5Monospaced.ttf') format('truetype');
+  font-family: 'Oswald', sans-serif;
+  src: url('/fonts/oswald.ttf') format('truetype');
+  font-display: swap;
+  font-optical-sizing: auto;
+  font-weight: 200 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Minimal5x7';
-  src: url('/fonts/Minimal5x7.ttf') format('truetype');
+  font-family: 'Caveat', sans-serif;
+  src: url('/fonts/oswald.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px; /* Set them apart a bit for legibility */
+  text-transform: uppercase; /* All caps */
+  /* Make the font look a bit more smooth */
+  /* Disabled due to https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/ */
+  /*
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    */
+}
+
+/* Soften fonts a little more by adding a shadow */
+html,
+html a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 @layer base {
@@ -90,12 +118,6 @@
   html {
     line-height: 1;
   }
-}
-
-html {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px; /* Set them apart a bit for legibility */
 }
 
 /*

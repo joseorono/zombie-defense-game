@@ -7,10 +7,10 @@ module.exports = {
     fontFamily: {
       // Just basic font stack for now, with sans serif as default
       serif: ['serif'],
-      body: ['oswald', 'sans-serif'],
-      display: ['oswald', 'sans-serif'],
-      oswald: ['oswald', 'sans-serif'],
-      caveat: ['caveat', 'sans-serif'],
+      body: ['Oswald', 'sans-serif'],
+      display: ['Oswald', 'sans-serif'],
+      oswald: ['Oswald', 'sans-serif'],
+      caveat: ['Caveat', 'cursive'],
     },
     fontSize: {
       xs: '0.725rem',

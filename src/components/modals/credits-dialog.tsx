@@ -66,6 +66,34 @@ export default function CreditsDialog() {
             </li>
           </ul>
           <h3 className="text-xl" id="misc">
+            Fonts
+          </h3>
+          <ul>
+            <li>
+              <b>Minimal3x5 Font:</b>
+              From{' '}
+              <a
+                href="https://opengameart.org/content/minimalist-pixel-fonts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                opengameart
+              </a>{' '}
+              by kheftel (CC0)
+            </li>
+            <li>ShadowsIntoLight-Regular, Oswald, Caveat from Google Fonts, all under the Open Font License.</li>
+            <li>
+              Special Elite from Online-Fonts, under the Apache 2.0 license.{' '}
+              <a
+                href="https://online-fonts.com/fonts/special-elite-rus-lomzz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Can be found here.
+              </a>
+            </li>
+          </ul>
+          <h3 className="text-xl" id="misc">
             Misc
           </h3>
           <ul>

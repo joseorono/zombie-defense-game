@@ -80,7 +80,6 @@
 }
 
 @layer base {
-  /*
   * {
     @apply border-border;
   }
@@ -90,8 +89,7 @@
   }
   html {
     line-height: 1;
-}
-*/
+  }
 }
 
 html {

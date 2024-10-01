@@ -29,14 +29,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
 import { Badge } from '~/components/ui/badge';
 import { Progress } from '~/components/ui/progress';
+import { isModalOpenAtom, modalContentAtom, setContentAtom } from '~/store/atoms';
+import { useAtom, useSetAtom } from 'jotai';
+import ConfigScreen from '~/components/modals/settings-dialog';
 
 export function ShadcnUiPlayground() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [sliderValue, setSliderValue] = useState(50);
+  const setIsModalOpen = useSetAtom(setContentAtom);
+
+  const handleShowSettingsModal = () => {
+    setIsModalOpen({ title: 'Settings', content: <ConfigScreen /> });
+  };  
 
   return (
     <div className="space-y-8 p-8">
       <h1 className="text-3xl font-bold">shadcn/ui Expanded Playground</h1>
+
+      <button onClick={handleShowSettingsModal}>Open Settings Modal</button>
 
       <Tabs defaultValue="inputs" className="w-full">
         <TabsList>

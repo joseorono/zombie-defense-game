@@ -80,6 +80,7 @@
 }
 
 @layer base {
+  /*
   * {
     @apply border-border;
   }
@@ -89,18 +90,14 @@
   }
   html {
     line-height: 1;
-  }
+}
+*/
 }
 
 html {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px; /* Set them apart a bit for legibility */
-}
-
-.clickerArea {
-  @apply flex flex-auto items-center justify-center bg-gray-300;
-  background: no-repeat center/cover url('/assets/splashscreen.webp');
 }
 
 /*

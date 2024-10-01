@@ -6,18 +6,11 @@ module.exports = {
   theme: {
     fontFamily: {
       // Just basic font stack for now, with sans serif as default
-      sans: ['lato', 'sans-serif'],
       serif: ['serif'],
-      body: ['lato', 'sans-serif'],
-      display: ['lato', 'sans-serif'],
-
-      /*
-      body: ['Minimal5x7', 'Minimal5x7', 'sans-serif'],
-      display: ['Minimal5x7', 'Minimal3x5', 'sans-serif'],
-      '5x7': ['Minimal5x7', 'sans-serif'],
-      '3x5': ['Minimal5x7', 'sans-serif'],
-      '5x5mono': ['Minimal5x5Monospaced', 'sans-serif'],
-      */
+      body: ['oswald', 'sans-serif'],
+      display: ['oswald', 'sans-serif'],
+      oswald: ['oswald', 'sans-serif'],
+      caveat: ['caveat', 'sans-serif'],
     },
     fontSize: {
       xs: '0.725rem',
@@ -252,9 +245,10 @@ module.exports = {
         },
       },
     ],
+    prefix: 'daisy-',
     base: false,
     styled: false,
-    utils: true,
+    utils: false,
     logs: false,
   },
 };

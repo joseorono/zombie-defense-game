@@ -5,7 +5,6 @@ module.exports = {
   prefix: '',
   theme: {
     fontFamily: {
-      // Just basic font stack for now, with sans serif as default
       serif: ['serif'],
       body: ['Oswald', 'sans-serif'],
       display: ['Oswald', 'sans-serif'],
@@ -247,7 +246,7 @@ module.exports = {
     ],
     prefix: 'daisy-',
     base: false,
-    styled: false,
+    styled: true,
     utils: false,
     logs: false,
   },

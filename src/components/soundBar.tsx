@@ -85,7 +85,7 @@ export default function SoundBar() {
           <Tooltip.Provider delayDuration={250}>
             <Tooltip.Root>
               <Tooltip.Trigger asChild>
-                <button className="IconButton btn btn-primary btn-neutral" onClick={handleMute}>
+                <button className="IconButton daisy-btn-primary btn-neutral daisy-btn" onClick={handleMute}>
                   {VolumeToShow()}
                 </button>
               </Tooltip.Trigger>

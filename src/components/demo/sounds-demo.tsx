@@ -19,22 +19,31 @@ export default function SoundsDemo() {
     <>
       <Suspense fallback={<SoundLoaderDemo />}>
         <h1>Sounds test</h1>
-        <button className="btn btn-primary" onClick={() => soundService.playSound(SoundNames.coinClick, 0.8, 0.7)}>
+        <button
+          className="daisy-btn-primary daisy-btn"
+          onClick={() => soundService.playSound(SoundNames.coinClick, 0.8, 0.7)}
+        >
           play coin sound
         </button>
-        <button className="btn btn-primary" onClick={() => soundService.startMusic(SoundNames.backgroundMusic, 1)}>
+        <button
+          className="daisy-btn-primary daisy-btn"
+          onClick={() => soundService.startMusic(SoundNames.backgroundMusic, 1)}
+        >
           play trademarked background music
         </button>
-        <button className="btn btn-primary" onClick={() => soundService.stopMusic(SoundNames.backgroundMusic)}>
+        <button
+          className="daisy-btn-primary daisy-btn"
+          onClick={() => soundService.stopMusic(SoundNames.backgroundMusic)}
+        >
           stop trademarked background music
         </button>
-        <button className="btn btn-primary" onClick={setMuted}>
+        <button className="daisy-btn-primary daisy-btn" onClick={setMuted}>
           {!isMuted ? 'mute' : 'unmute'}
         </button>
-        <button className="btn btn-primary" onClick={() => soundService.setGlobalVolume(0.1)}>
+        <button className="daisy-btn-primary daisy-btn" onClick={() => soundService.setGlobalVolume(0.1)}>
           set global volume to 10%
         </button>
-        <button className="btn btn-primary" onClick={() => soundService.setGlobalVolume(1)}>
+        <button className="daisy-btn-primary daisy-btn" onClick={() => soundService.setGlobalVolume(1)}>
           set global volume to 100%
         </button>
       </Suspense>
@@ -45,4 +54,3 @@ export default function SoundsDemo() {
 export function SoundLoaderDemo() {
   return <div>Loading</div>;
 }
-

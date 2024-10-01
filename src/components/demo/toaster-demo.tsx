@@ -4,14 +4,14 @@ export default function ToasterDemo() {
   return (
     <>
       <h1>Game Template</h1>
-      <button className="btn btn-primary" onClick={() => toast.success('Test Succesful!')}>
+      <button className="daisy-btn-primary daisy-btn" onClick={() => toast.success('Test Succesful!')}>
         Success Toast
       </button>
-      <button className="btn btn-primary" onClick={() => toast.error('Error Test Succesful!')}>
+      <button className="daisy-btn-primary daisy-btn" onClick={() => toast.error('Error Test Succesful!')}>
         Error Toast
       </button>
       <button
-        className="btn btn-primary"
+        className="daisy-btn-primary daisy-btn"
         onClick={() =>
           toast.loading('Loading Modal Succesful!', {
             duration: 3000,
@@ -20,7 +20,7 @@ export default function ToasterDemo() {
       >
         Loading Toast
       </button>
-      <button className="btn btn-primary" onClick={() => toast.custom('Info Modal Succesful!')}>
+      <button className="daisy-btn-primary daisy-btn" onClick={() => toast.custom('Info Modal Succesful!')}>
         Info Toast
       </button>
     </>

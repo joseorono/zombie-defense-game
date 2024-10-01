@@ -55,6 +55,18 @@ export const resourcesAtom = withImmer(
   }),
 );
 
+export const userScoreAtom = atomWithStorage<ScoreEntry>('userScore', {
+  playerName: 'Player',
+  civilianAdultCount: 33,
+  civilianChildCount: 23,
+  daysSurvived: 30,
+  unitsRemaining: 65,
+  pointsFromdays: 100,
+  pointsFromCivilians: 554,
+  pointsFromWeaponUpgrades: 22,
+  pointsFromResources: 471,
+  totalScore: 2800,
+});
 export const scoreboardAtom = atomWithStorage<ScoreEntry[]>('score', []);
 
 export const currentEventAtom = withImmer(atomWithStorage<eventData>('event', NOTHING_EVENT));

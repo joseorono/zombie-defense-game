@@ -10,7 +10,8 @@ import { PlaceState, placeKeys } from '~/types/city-places';
 
 // Audio atoms
 export const isMutedAtom = atomWithStorage<boolean>('isMuted', false);
-export const volumeAtom = atomWithStorage<number>('volume', 1);
+export const musicVolumeAtom = atomWithStorage<number>('volume', 1);
+export const effectsVolumeAtom = atomWithStorage<number>('volume', 1);
 
 //player atoms
 export const playerNameAtom = atomWithStorage<string>('playerName', '');

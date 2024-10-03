@@ -38,78 +38,78 @@ export const CalculateScoreView = () => {
       <b>Child Civilians: </b>
       <Odometer value={childCivilians} format="(.ddd),dd" /> */}
 
-      <div className="overflow-x-auto">
-        <table className="table">
+      <div className="flex min-h-screen items-center justify-center bg-black text-white">
+        <table className="mx-auto table-auto">
           {/* head */}
           <thead>
             <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Score</th>
+              <th className="py-4 pr-16 text-right"></th>
+              <th className="py-4 pr-16 text-right">Name</th>
+              <th className="py-4 pr-16 text-right">Score</th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
             <tr>
-              <th>1</th>
-              <td>adultCivilians</td>
-              <td>
+              <th className="pr-16 text-right">1</th>
+              <td className="pr-16 text-right">adultCivilians</td>
+              <td className="pr-16 text-right">
                 <Odometer value={adultCivilians} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 2 */}
             <tr>
-              <th>2</th>
-              <td>childCivilians</td>
-              <td>
+              <th className="pr-16 text-right">2</th>
+              <td className="pr-16 text-right">childCivilians</td>
+              <td className="pr-16 text-right">
                 <Odometer value={childCivilians} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 3 */}
             <tr>
-              <th>3</th>
-              <td>daysSurvived</td>
-              <td>
+              <th className="pr-16 text-right">3</th>
+              <td className="pr-16 text-right">daysSurvived</td>
+              <td className="pr-16 text-right">
                 <Odometer value={daysSurvived} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 4 */}
             <tr>
-              <th>4</th>
-              <td>unitsRemaining</td>
-              <td>
+              <th className="pr-16 text-right">4</th>
+              <td className="pr-16 text-right">unitsRemaining</td>
+              <td className="pr-16 text-right">
                 <Odometer value={unitsRemaining} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 5 */}
             <tr>
-              <th>5</th>
-              <td>pointsFromdays</td>
-              <td>
+              <th className="pr-16 text-right">5</th>
+              <td className="pr-16 text-right">pointsFromdays</td>
+              <td className="pr-16 text-right">
                 <Odometer value={pointsFromdays} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 6 */}
             <tr>
-              <th>6</th>
-              <td>pointsFromCivilians</td>
-              <td>
+              <th className="pr-16 text-right">6</th>
+              <td className="pr-16 text-right">pointsFromCivilians</td>
+              <td className="pr-16 text-right">
                 <Odometer value={pointsFromCivilians} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 7 */}
             <tr>
-              <th>7</th>
-              <td>pointsFromWeaponUpgrades</td>
-              <td>
+              <th className="pr-16 text-right">7</th>
+              <td className="pr-16 text-right">pointsFromWeaponUpgrades</td>
+              <td className="pr-16 text-right">
                 <Odometer value={pointsFromWeaponUpgrades} format="(.ddd),dd" />
               </td>
             </tr>
             {/* row 8 */}
             <tr>
-              <th>8</th>
-              <td>pointsFromResources</td>
-              <td>
+              <th className="pr-16 text-right">8</th>
+              <td className="pr-16 text-right">pointsFromResources</td>
+              <td className="pr-16 text-right">
                 <Odometer value={pointsFromResources} format="(.ddd),dd" />
               </td>
             </tr>

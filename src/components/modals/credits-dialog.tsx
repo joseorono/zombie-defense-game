@@ -122,25 +122,108 @@ export default function CreditsDialog() {
           </h3>
 
           <p>
-            Close modal sound, Creative Commons 0, modusmogulus&nbsp;
-            <a href="https://freesound.org/people/modusmogulus/sounds/735897/">
-              https://freesound.org/people/modusmogulus/sounds/735897/
+            Kuwait radio, CC BY-NC 4.0, W1ZY&nbsp;
+            <a href="https://freesound.org/people/W1ZY/sounds/455883/">
+              https://freesound.org/people/W1ZY/sounds/455883/
             </a>
           </p>
           <p>
-            Really clean Clicking Sound Creative Commons 0, modusmogulus&nbsp;
-            <a href="https://freesound.org/people/BiORNADE/sounds/735804/">
-              https://freesound.org/people/BiORNADE/sounds/735804/
+            Numbers station malfunction, CC 0, kb7clx&nbsp;
+            <a href="https://freesound.org/people/kb7clx/sounds/396348/">
+              https://freesound.org/people/kb7clx/sounds/396348/
             </a>
           </p>
 
           <p>
-            coin pouch for mercator Pouch of Gold Coins, Rummaging Through.wav, Creative Commons 0, The_Frisbee_of_Peace
+            chewing zombie sounds, Pixabay Content License, shillsuqat
             &nbsp;
-            <a href="https://freesound.org/people/The_Frisbee_of_Peace/sounds/575576/">
-              https://freesound.org/people/The_Frisbee_of_Peace/sounds/575576/
+            <a href="https://pixabay.com/sound-effects/chewing-zombie-wav-82911/">
+              https://pixabay.com/sound-effects/chewing-zombie-wav-82911/
             </a>
           </p>
+
+          <p>
+            zombie flesh bites , Pixabay Content License, MrPokephile
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/zombie-flesh-bites-76826/">
+              https://pixabay.com/sound-effects/zombie-flesh-bites-76826/
+            </a>
+          </p>
+
+          <p>
+            zombies eating, Pixabay Content License, Breviceps
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/zombies-eating-46440/">
+              https://pixabay.com/sound-effects/zombies-eating-46440/
+            </a>
+          </p>
+
+          <p>
+            zombie moans, Pixabay Content License, Darsycho
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/zombie-moans-29924/">
+              https://pixabay.com/sound-effects/zombie-moans-29924/
+            </a>
+          </p>
+
+          <p>
+            shotgun sound, Pixabay Content License, DennisH18
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/shotgun-146188/">
+              https://pixabay.com/sound-effects/shotgun-146188/
+            </a>
+          </p>
+
+          <p>
+            sniper rifle shot, CC BY-NC 4.0, EMSIarma
+            &nbsp;
+            <a href="https://freesound.org/people/EMSIarma/sounds/108852/">
+              https://freesound.org/people/EMSIarma/sounds/108852/
+            </a>
+          </p>
+          
+          <p>
+            chopping logs, Pixabay Content License, PapercutterJohn
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/chopping-logs-73222/">
+              https://pixabay.com/sound-effects/chopping-logs-73222/
+            </a>
+          </p>
+          
+          <p>
+            cokcing gun, Pixabay Content License, Paul368
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/berretta-9mm-cocking-slower-105410/">
+              https://pixabay.com/sound-effects/berretta-9mm-cocking-slower-105410/
+            </a>
+          </p>
+          
+          <p>
+            Female screan, Pixabay Content License, Phobiix
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/frantic-screaming-213549/">
+              https://pixabay.com/sound-effects/frantic-screaming-213549/
+            </a>
+          </p>
+          
+          <p>
+            Male scream, Pixabay Content License, Dinsfire
+            &nbsp;
+            <a href="https://pixabay.com/sound-effects/male-voice-screaming-loudly-6147/">
+              https://pixabay.com/sound-effects/male-voice-screaming-loudly-6147/
+            </a>
+          </p>
+
+          <p>
+            Cancel button sound, Carlos Sierra
+            &nbsp;
+          </p>
+
+          <p>
+            Random event sound, Carlos Sierra
+            &nbsp;
+          </p>
+
 
           <h3 className="text-xl" id="music-">
             MUSIC:
